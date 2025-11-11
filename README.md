@@ -1,28 +1,37 @@
-🔍 BuscaRotas
-Projeto feito para comparar vários algoritmos de busca para encontrar caminhos em grafos (grades). Aqui você consegue ver como cada algoritmo se comporta, qual é mais rápido, qual expande mais nós e qual gera o caminho mais barato.
+# Busca de Rotas — Algoritmos de Busca em Grafos
 
-🚀 Algoritmos implementados
-BFS
-DFS
-Dijkstra
-Greedy (Manhattan / Euclidiana)
-A* (Manhattan / Euclidiana)
+Este projeto implementa e compara diferentes algoritmos de busca para encontrar rotas em um grid.  
+O objetivo é analisar desempenho, custo do caminho e eficiência na expansão de nós.
 
-Cada um deles roda nos grafos de teste e gera:
-✅ custo do caminho
-✅ nós expandidos
-✅ tempo de execução
+## 🚀 Algoritmos Implementados
 
-📂 Estrutura do projeto
-/src        → código-fonte Java  
-teste_3x3   → resultados do grafo 3x3  
-teste_4x4   → resultados do grafo 4x4  
-build.xml   → script Ant  
+- **A\*** (Manhattan e Euclidiana)
+- **Dijkstra**
+- **BFS (Breadth-First Search)**
+- **DFS (Depth-First Search)**
+- **Greedy Best-First Search** (Manhattan e Euclidiana)
 
-▶️ Como executar
+Cada algoritmo retorna:
+- Custo total do caminho
+- Número de nós expandidos
+- Tempo de execução
+- Caminho final encontrado
 
-Clone o repositório
-git clone https://github.com/MileneCaldeira/BuscaRotas
-Abra o projeto na sua IDE Java (NetBeans/Eclipse/IntelliJ).
-Execute a classe principal.
-Os resultados serão exibidos no console e salvos nos arquivos de teste.
+## 📊 Tabela de Resultados
+
+| Algoritmo | Heurística | Custo | Nós Expandidos | Tempo (ms) |
+|-----------|------------|-------|----------------|------------|
+| A*        | Manhattan  | 10    | 15             | 0.15       |
+| A*        | Euclidiana | 10    | 16             | 0.07       |
+| Dijkstra  | -          | 10    | 16             | 0.74       |
+| BFS       | -          | 11    | 16             | 0.88       |
+| DFS       | -          | 10    | 8              | 0.31       |
+| Greedy    | Manhattan  | 11    | 8              | 0.06       |
+| Greedy    | Euclidiana | 13    | 8              | 0.06       |
+
+## 🧠 Principais Conclusões
+
+- **A\*** foi o mais consistente entre custo e desempenho.
+- **Greedy** é extremamente rápido, mas costuma gerar caminhos piores.
+- **BFS** e **Dijkstra** garantem ótimos caminhos, porém são mais lentos.
+- **DFS** pode encontrar resultados rápidos, mas não garante o caminho ótimo.
