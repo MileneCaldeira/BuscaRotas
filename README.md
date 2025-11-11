@@ -8,19 +8,13 @@ Implementação e comparação de algoritmos de busca em grafos (BFS, DFS, Dijks
 
 ```
 BuscaRotas/
-├── grafo3x3/
-│   ├── teste_3x3.txt.a.manhattan
-│   ├── ...
-├── grafo4x4/
-│   ├── teste_4x4.txt.a.manhattan
-│   ├── ...
 ├── src/
-│   ├── bfs.py
-│   ├── dfs.py
-│   ├── dijkstra.py
-│   ├── greedy.py
-│   ├── astar.py
-│   └── utils.py
+├── ├──BuscaRotas.java
+├── ├──Grafo.java
+├── ├──No.java
+├── ├──Resultado.java
+│
+└── Files/ (contém os arquivos de teste 3x3 e 4x4)
 ```
 
 ---
