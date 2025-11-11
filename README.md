@@ -61,23 +61,6 @@ BuscaRotas/
 * **DFS** → Poucos nós, mas resultado imprevisível.
 * **BFS** → Subótimo e mais pesado conforme cresce.
 
----
-
-## 🚀 Execução
-
-### Rodar testes 3×3
-
-```bash
-python src/main.py --grid 3
-```
-
-### Rodar testes 4×4
-
-```bash
-python src/main.py --grid 4
-```
-
----
 
 ## 📚 Sobre
 
