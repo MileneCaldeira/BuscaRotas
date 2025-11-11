@@ -161,7 +161,7 @@ public class BuscaRotas {
             writer.println("TEMPO (ms): " + tempoFormatado);
             
             writer.close();
-            System.out.println("✓ Gerado: " + nomeArquivo);
+            System.out.println("Gerado: " + nomeArquivo);
             
         } catch (IOException e) {
             System.err.println("Erro ao salvar " + nomeArquivo + ": " + e.getMessage());
